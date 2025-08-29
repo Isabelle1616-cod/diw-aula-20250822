@@ -1,4 +1,4 @@
-<style>
+
         *{
             font-size: 16px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,14 +64,21 @@
         /* border: .2rem solid purple; */
         flex: 1;
         padding: 1rem;
+        display: flex;
     }
 
     .cartao{
-        border: .2rem solid rgb(0, 0, 0);
+        border: .3rem solid rgb(0, 0, 0);
+        /* grossura da borda */
         width: 15rem;
-        height: 20rem;
-        padding: .7rem;
+        /* largura */
+        height: 27rem;
+        /* altura */
+        padding: .5rem;
+        /* da distacia da borda para o elemento */
         box-shadow: .5rem .5rem .3rem .01rem rgb(146, 146, 146);
+        margin-bottom: .6rem;
+        margin-right: 1rem;
     }
 
     .produto{
@@ -81,10 +88,67 @@
     footer{
         /* border: .2rem solid yellow; */
         background-color: rgb(245, 243, 243);
-        padding: .6rem;
-        height: 3rem;
+        padding: .5rem;
+        height: 2rem;
         color: rgb(190, 188, 188);
 
     }
 
-    </style>
+    .opcao{
+        display: flex;
+        border: .1rem, solid #eee;
+        border-radius: 10rem;
+        padding: 0.10rem;
+        background-color: #ddd;
+    }
+
+    /* hover, mause sobre elemento */
+    .opcao.hover{
+        background-color: #ccc;
+        color:rgb(97, 87, 87);
+        box-shadow: 0rem .3rem .3rem .01rem #ddd;
+    }
+
+    .opcao.hover.icone final{
+        background-color: #ccc;
+        color:rgb(97, 87, 87);
+        box-shadow: 0rem .3rem .3rem .01rem #ddd;
+    }
+
+
+    .icone-inicial{
+        border: 1rem solid #333;
+        width: .1.3rem;
+
+    }
+
+    .rotulo{
+        border: .1rem solid #333;
+    }
+
+    .icone-final{
+        border: 1rem solid rgb(209, 191, 191);
+        width: 1.5rem;
+        text-align: right;
+        opacity: 0;
+        transition: opacity .3seg ;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    @media (max-width: 576px) {
+        nav{
+            display: none;
+
+        }
+
+        main{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    }
+
+    
